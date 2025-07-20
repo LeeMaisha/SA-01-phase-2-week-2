@@ -1,21 +1,23 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import list from "./components/list"
+import form from "./components/form"
+import item from "./components/item"
 
 
 //base API for the url
-const url= "http://localhost:3000/goals"
+const url= "http://localhost:3000/goals" // Replace with your actual API endpoint
 
 function App(){
     const [goals ,setGoals] = useState ([])
     const [loading,setLoading] = useState (true)
     
     useEffect(() =>{
-        //code to run after rerendering
-        fetch(url)
+        //code to run after rendering
+        fetch(URL)
          .then(res => res.json())
          .then(data => setUsers(data))
-         .catch(err => console.error(error));
+         .catch(err => console.error());
     },[]);
     
     // Removed duplicate sendData declaration

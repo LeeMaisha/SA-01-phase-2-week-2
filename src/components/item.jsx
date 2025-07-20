@@ -1,4 +1,4 @@
-import Delete from "../Components/Delete"
+import Delete from "./delete"
 
 function Item({goal, setGoals }) {
   const {
