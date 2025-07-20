@@ -9,13 +9,10 @@ function List({ goals, onUpdateGoal, onDeleteGoal }) {
 
   return (
     <div>
+      <h2 style={{color:"green"}}>My goals</h2>
       {goals.map(goal => (
-        <GoalItem
-          key={goal.id}
-          goal={goal}
-          onUpdateGoal={onUpdateGoal}
-          onDeleteGoal={onDeleteGoal}
-        />
+        <item key ={goal.id} goal={goal} setGoal={setGoals}/>
+        
       ))}
     </div>
   );

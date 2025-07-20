@@ -1,4 +1,5 @@
-{
+// Goal data for the planner app
+const data = {
   "goals": [
     {
       "id": "1",
@@ -111,4 +112,6 @@
 
   ]
 
-}
+};
+
+export default data;

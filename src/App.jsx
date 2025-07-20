@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import list from "./components/list"
-import form from "./components/form"
 
 
 //base API for the url
